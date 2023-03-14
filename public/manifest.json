@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+
+  "name": "KUResult",
+  "description": "Inform result of your entrance exam for Kyoto University",
+  "version": "0.1",
+
+  "options_ui": {
+    "page": "options.html"
+  },
+  "content_scripts": [
+      {
+          "matches": ["https://daigakujc.jp/pal.php"],
+          "js": ["js/vendor.js", "js/result.js"]
+      }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://daigakujc.jp/pal.php"
+  ]
+}
