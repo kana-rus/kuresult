@@ -10,11 +10,11 @@
     "test": "npx jest --passWithNoTests",
     "style": "prettier --write \"src/**/*.{ts,tsx}\""
   },
-  "author": "",
+  "author": "kana-rus",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/kana-rus/kuresult.git"
   },
   "dependencies": {
     "react": "^17.0.1",
